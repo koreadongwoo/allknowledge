@@ -1,0 +1,24 @@
+title:              "모든지식"
+tagline:            "모두를 위한, 모든 지식"
+email:              "dwdw1772@naver.com"
+description:        "비전공자를 위한 미니멀한 지식을 전달하는 블로그"
+author:             "김동우"
+baseurl:            "/"
+url:                "https://allknowledge.kr"
+locale:             "ko_KR"
+thumbnail:          "/img/thumbnail.png"
+
+# Social Profiles
+instagram_username: instagram_username
+facebook_username:  facebook_username
+linkedin_username:  dong-woo-kim-0823
+
+# Build settings
+markdown:           kramdown
+permalink:          /:title
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
