@@ -50,5 +50,14 @@ layout: default
       </div>
     </div>
   </article>
-  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"a56203478c1399ae374ba648e","lid":"0980ec9365","uniqueMethods":true}) })</script>
+
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+  <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"a56203478c1399ae374ba648e","lid":"0980ec9365","uniqueMethods":true}) })</script>
+  <script type="text/javascript">
+  var viewEvent = '{{page.title}}';
+  gtag('event','보기', {
+  'event_category': '글보기',
+  'event_label': viewEvent,
+  });
+  </script>
   {% include disqus.html %}
