@@ -60,4 +60,12 @@ layout: default
   'event_label': postName,
   });
   </script>
+  
+  <script>
+
+  fbq('track','ViewContent',{
+    content_name:'{{page.tile}}'
+  });
+
+</script>
   {% include disqus.html %}
