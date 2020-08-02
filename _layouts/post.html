@@ -53,19 +53,21 @@ layout: default
 
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
   <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"a56203478c1399ae374ba648e","lid":"0980ec9365","uniqueMethods":true}) })</script>
+
+  <!--GA기존함수-->
   <script type="text/javascript">
-  var postName = '{{page.title}}';
-  gtag('event','보기', {
-  'event_category': '글보기',
-  'event_label': postName,
-  });
+  //var postName = '{{page.title}}';
+  //gtag('event','보기', {
+  //'event_category': '글보기',
+  //'event_label': postName,
+  //});
   </script>
   
+  <!--페북픽셀 기존함수-->
   <script>
+  //fbq('track','ViewContent',{
+    //content_name:'{{page.tile}}'
+  //});
+  </script>
 
-  fbq('track','ViewContent',{
-    content_name:'{{page.tile}}'
-  });
-
-</script>
   {% include disqus.html %}
