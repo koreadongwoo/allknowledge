@@ -59,7 +59,7 @@ layout: default
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  
+
   <!--GA기존함수-->
   <script type="text/javascript">
   //var postName = '{{page.title}}';
@@ -74,6 +74,14 @@ layout: default
   //fbq('track','ViewContent',{
     //content_name:'{{page.tile}}'
   //});
+  </script>
+
+  <script>
+  dataLayer.push({
+    'event' : 'ViewContent',
+    'content_name' : {{page.title}},
+    'content_ids' : {{page.content_id}}
+   });
   </script>
 
   {% include disqus.html %}
